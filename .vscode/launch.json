@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "CLionTest (Debug)",
+			"request": "launch",
+			"preLaunchTask": "CLionTest Linux Debug Build",
+			"program": "/home/kir/projects/ue/ue4-mousemove/Binaries/Linux/CLionTest-Linux-Debug",
+			"args": [
+			],
+			"cwd": "/home/kir/projects/ue/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "CLionTest (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "CLionTest Linux DebugGame Build",
+			"program": "/home/kir/projects/ue/ue4-mousemove/Binaries/Linux/CLionTest-Linux-DebugGame",
+			"args": [
+			],
+			"cwd": "/home/kir/projects/ue/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "CLionTest (Development)",
+			"request": "launch",
+			"preLaunchTask": "CLionTest Linux Development Build",
+			"program": "/home/kir/projects/ue/ue4-mousemove/Binaries/Linux/CLionTest",
+			"args": [
+			],
+			"cwd": "/home/kir/projects/ue/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "CLionTest (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "CLionTest Linux Shipping Build",
+			"program": "/home/kir/projects/ue/ue4-mousemove/Binaries/Linux/CLionTest-Linux-Shipping",
+			"args": [
+			],
+			"cwd": "/home/kir/projects/ue/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "CLionTest (Test)",
+			"request": "launch",
+			"preLaunchTask": "CLionTest Linux Test Build",
+			"program": "/home/kir/projects/ue/ue4-mousemove/Binaries/Linux/CLionTest-Linux-Test",
+			"args": [
+			],
+			"cwd": "/home/kir/projects/ue/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "CLionTestEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "CLionTestEditor Linux Debug Build",
+			"program": "/home/kir/projects/ue/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-Debug",
+			"args": [
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject"
+			],
+			"cwd": "/home/kir/projects/ue/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "CLionTestEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "CLionTestEditor Linux DebugGame Build",
+			"program": "/home/kir/projects/ue/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-DebugGame",
+			"args": [
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject"
+			],
+			"cwd": "/home/kir/projects/ue/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "CLionTestEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "CLionTestEditor Linux Development Build",
+			"program": "/home/kir/projects/ue/UnrealEngine/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject"
+			],
+			"cwd": "/home/kir/projects/ue/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/home/kir/projects/ue/UnrealEngine/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/home/kir/projects/ue/UnrealEngine"
+		}
+	]
+}

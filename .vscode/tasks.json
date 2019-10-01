@@ -1,0 +1,1710 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "CLionTest Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Mac",
+				"Debug",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Mac",
+				"Debug",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Mac",
+				"Debug",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Mac",
+				"DebugGame",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Mac",
+				"DebugGame",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Mac",
+				"DebugGame",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Mac",
+				"Development",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Mac",
+				"Development",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Mac",
+				"Development",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Mac",
+				"Shipping",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Mac",
+				"Shipping",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Mac",
+				"Shipping",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Mac",
+				"Test",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Mac",
+				"Test",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Mac",
+				"Test",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"IOS",
+				"Debug",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"IOS",
+				"Debug",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"IOS",
+				"Debug",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"IOS",
+				"DebugGame",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"IOS",
+				"DebugGame",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"IOS",
+				"DebugGame",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"IOS",
+				"Development",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"IOS",
+				"Development",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"IOS",
+				"Development",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"IOS",
+				"Shipping",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"IOS",
+				"Shipping",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"IOS",
+				"Shipping",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"IOS",
+				"Test",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"IOS",
+				"Test",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"IOS",
+				"Test",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"HTML5",
+				"Debug",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"HTML5",
+				"Debug",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"HTML5",
+				"Debug",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"HTML5",
+				"DebugGame",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"HTML5",
+				"DebugGame",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"HTML5",
+				"DebugGame",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"HTML5",
+				"Development",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"HTML5",
+				"Development",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"HTML5",
+				"Development",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"HTML5",
+				"Shipping",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"HTML5",
+				"Shipping",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"HTML5",
+				"Shipping",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"HTML5",
+				"Test",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"HTML5",
+				"Test",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"HTML5",
+				"Test",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Linux",
+				"Debug",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Linux",
+				"Debug",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Linux",
+				"Debug",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Linux",
+				"DebugGame",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Linux",
+				"DebugGame",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Linux",
+				"DebugGame",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Linux",
+				"Development",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Linux",
+				"Development",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Linux",
+				"Development",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Linux",
+				"Shipping",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Linux",
+				"Shipping",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Linux",
+				"Shipping",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Linux",
+				"Test",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Linux",
+				"Test",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"Linux",
+				"Test",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest TVOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"TVOS",
+				"Debug",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest TVOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"TVOS",
+				"Debug",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest TVOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest TVOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"TVOS",
+				"Debug",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest TVOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"TVOS",
+				"DebugGame",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest TVOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"TVOS",
+				"DebugGame",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest TVOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest TVOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"TVOS",
+				"DebugGame",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest TVOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"TVOS",
+				"Development",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest TVOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"TVOS",
+				"Development",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest TVOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest TVOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"TVOS",
+				"Development",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest TVOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"TVOS",
+				"Shipping",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest TVOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"TVOS",
+				"Shipping",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest TVOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest TVOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"TVOS",
+				"Shipping",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest TVOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"TVOS",
+				"Test",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest TVOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"TVOS",
+				"Test",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTest TVOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTest TVOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTest",
+				"TVOS",
+				"Test",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTestEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTestEditor",
+				"Linux",
+				"Debug",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTestEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTestEditor",
+				"Linux",
+				"Debug",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTestEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTestEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTestEditor",
+				"Linux",
+				"Debug",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTestEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTestEditor",
+				"Linux",
+				"DebugGame",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTestEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTestEditor",
+				"Linux",
+				"DebugGame",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTestEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTestEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTestEditor",
+				"Linux",
+				"DebugGame",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTestEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTestEditor",
+				"Linux",
+				"Development",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTestEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTestEditor",
+				"Linux",
+				"Development",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTestEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTestEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTestEditor",
+				"Linux",
+				"Development",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTestEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTestEditor",
+				"Mac",
+				"Debug",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTestEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTestEditor",
+				"Mac",
+				"Debug",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTestEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTestEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTestEditor",
+				"Mac",
+				"Debug",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTestEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTestEditor",
+				"Mac",
+				"DebugGame",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTestEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTestEditor",
+				"Mac",
+				"DebugGame",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTestEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTestEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTestEditor",
+				"Mac",
+				"DebugGame",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTestEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTestEditor",
+				"Mac",
+				"Development",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTestEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTestEditor",
+				"Mac",
+				"Development",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CLionTestEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		},
+		{
+			"label": "CLionTestEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CLionTestEditor",
+				"Mac",
+				"Development",
+				"/home/kir/projects/ue/ue4-mousemove/CLionTest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/kir/projects/ue/UnrealEngine"
+			}
+		}
+	]
+}

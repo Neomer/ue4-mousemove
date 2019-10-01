@@ -26,6 +26,7 @@ ACLionTestCharacter::ACLionTestCharacter()
 	bUseControllerRotationPitch = false;
 	bUseControllerRotationYaw = false;
 	bUseControllerRotationRoll = false;
+	_needMove = false;
 
 	// Configure character movement
 	GetCharacterMovement()->bOrientRotationToMovement = true; // Character moves in the direction of input...	
@@ -59,25 +60,32 @@ void ACLionTestCharacter::SetupPlayerInputComponent(class UInputComponent* Playe
 	auto remoteController = dynamic_cast<ARemotePlayerController*>(GetController());
 	remoteController->locationClickedCallback(
 		[&](const FVector& location) {
-			UE_LOG(LogTemp, Warning, TEXT("Destination point: %s"), *location.ToString());
-
-			_movementDirection = location - GetActorLocation();
-			_movementDirection.Z = 0.0f;
-
-			auto rotation = _movementDirection.Rotation();
-			SetActorRotation(rotation);
+			MoveActorToLocation(location);
 		});
 }
 
-void ACLionTestCharacter::MoveToLocation(const FVector& location)
+void ACLionTestCharacter::MoveActorToLocation(const FVector& location)
 {
-	
+	UE_LOG(LogTemp, Warning, TEXT("Destination point: %s"), *location.ToString());
+	_targetLocation = location;
+
+	auto movementDirection = _targetLocation - GetActorLocation();
+	movementDirection.Z = 0.0f;
+	auto rotation = movementDirection.Rotation();
+	SetActorRotation(rotation);
+	_targetDirection = rotation.Vector();
+	_needMove = true;
 }
 
 
 void ACLionTestCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	
+	if (_needMove) {
+		AddMovementInput(_targetDirection, 2.0f);
+		_needMove = FVector::DistSquared(GetActorLocation(), _targetLocation) > 10000;
+	}
 }
 
 void ACLionTestCharacter::OnResetVR()

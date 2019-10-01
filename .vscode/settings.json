@@ -1,0 +1,12 @@
+{
+	"files.exclude": {
+		"/home/kir/projects/ue/ue4-mousemove/.git": true,
+		"/home/kir/projects/ue/ue4-mousemove/.idea": true,
+		"/home/kir/projects/ue/ue4-mousemove/.vscode": true,
+		"/home/kir/projects/ue/ue4-mousemove/Content": true,
+		"/home/kir/projects/ue/ue4-mousemove/DerivedDataCache": true,
+		"/home/kir/projects/ue/ue4-mousemove/Intermediate": true,
+		"/home/kir/projects/ue/ue4-mousemove/Saved": true,
+		"/home/kir/projects/ue/ue4-mousemove/cmake-build-debug": true
+	}
+}

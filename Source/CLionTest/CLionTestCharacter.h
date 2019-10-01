@@ -29,6 +29,8 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
 
+	void MoveActorToLocation(const FVector &location);
+
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -79,6 +81,8 @@ public:
 private: 
 	void MoveToLocation(const FVector& location);
 
-	FVector _movementDirection;
+	FVector _targetLocation;
+	FVector _targetDirection;
+	bool _needMove;
 };
 
